@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93488CE91A762EDD00A6B481 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93488CE81A762EDD00A6B481 /* Entitlements.plist */; };
 		939D8DD11A762AB500F5E4A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D8DD01A762AB500F5E4A9 /* main.m */; };
 		939D8DD41A762AB500F5E4A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D8DD31A762AB500F5E4A9 /* AppDelegate.m */; };
 		939D8DD71A762AB500F5E4A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D8DD61A762AB500F5E4A9 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93488CE81A762EDD00A6B481 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		939D8DCB1A762AB500F5E4A9 /* MyGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939D8DCF1A762AB500F5E4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939D8DD01A762AB500F5E4A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		939D8DC21A762AB500F5E4A9 = {
 			isa = PBXGroup;
 			children = (
+				93488CE81A762EDD00A6B481 /* Entitlements.plist */,
 				939D8DCD1A762AB500F5E4A9 /* MyGitHub */,
 				939D8DE71A762AB500F5E4A9 /* MyGitHubTests */,
 				939D8DCC1A762AB500F5E4A9 /* Products */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93488CE91A762EDD00A6B481 /* Entitlements.plist in Resources */,
 				939D8DDA1A762AB500F5E4A9 /* Main.storyboard in Resources */,
 				939D8DDF1A762AB500F5E4A9 /* LaunchScreen.xib in Resources */,
 				939D8DDC1A762AB500F5E4A9 /* Images.xcassets in Resources */,
@@ -280,7 +284,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -322,7 +328,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -345,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = MyGitHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = MyGitHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +424,7 @@
 				939D8DF01A762AB500F5E4A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		939D8DF11A762AB500F5E4A9 /* Build configuration list for PBXNativeTarget "MyGitHubTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +433,7 @@
 				939D8DF31A762AB500F5E4A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
